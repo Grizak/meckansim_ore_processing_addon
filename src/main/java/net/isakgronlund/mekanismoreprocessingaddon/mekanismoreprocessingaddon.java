@@ -8,7 +8,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraft.world.item.CreativeModeTabs;
 
 @Mod(mekanismoreprocessingaddon.MOD_ID)
 public class mekanismoreprocessingaddon {
@@ -23,7 +22,7 @@ public class mekanismoreprocessingaddon {
 
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::clientSetup);
-        modEventBus.addListener(ModItems::registerCreativeTabs);
+        modEventBus.addListener(ModCreativeTabs::registerCreativeTabs);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

@@ -3,25 +3,32 @@ loaderVersion="[47,)" #mandatory (Forge 47 for Minecraft 1.20.1)
 license="MIT"
 
 [[mods]]
-modId="mekanismoreprocessingaddon"
-version="1.0.0"
-displayName="Mekansim Ore Processing Addon"
-authors="Isak Grönlund"
+    modId="mekanismoreprocessingaddon"
+    version="1.0.0"
+    displayName="Mekansim Ore Processing Addon"
+    authors="Isak Grönlund"
 
 description="""
 Hello, World! This is my first Minecraft mod, please do not panic if there is anything wrong syntactically because I don't know Java.
 """
 
 [[dependencies.mekanismoreprocessingaddon]]
-modId="forge"
-mandatory=true
-versionRange="[47,)" # Correct Forge version for MC 1.20.1
-ordering="NONE"
-side="BOTH"
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)" # Correct Forge version for MC 1.20.1
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.mekanismoreprocessingaddon]]
-modId="minecraft"
-mandatory=true
-versionRange="[1.20.1,1.21)"
-ordering="NONE"
-side="BOTH"
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependecies.mekanismoreprocessingaddon]]
+    modId="mekanism"
+    mandatory=true
+    versionRange="[10.3.9,)"
+    ordering="AFTER"
+    side="BOTH"

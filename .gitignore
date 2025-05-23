@@ -24,5 +24,7 @@ run
 # Files from Forge MDK
 forge*changelog.txt
 
-# My logs
+# My testing folders/files
 logs
+*.log
+mods
